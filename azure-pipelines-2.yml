@@ -17,3 +17,20 @@ steps:
 - task: PublishBuildArtifacts@1
 
 - script: python -mhtmllib "h.html"
+
+- task: PythonScript@0
+
+
+  inputs:
+
+
+    scriptSource: 'inline'
+
+
+    script: |
+
+
+      print('Hello world 1')
+
+
+      print('KLU')
